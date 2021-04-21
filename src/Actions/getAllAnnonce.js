@@ -3,7 +3,7 @@ import { SET_ANNONCES } from "../Store/Reducers/GlobalReducer";
 
 export function getAllAnnonce() {
     return function(dispatch) {
-      return axios.get("http://127.0.0.1:8000/api/annonces.json")
+      return axios.get("https://salty-hamlet-11877.herokuapp.com/api/annonces.json")
        .then(({ data }) => {
           dispatch(setAllAnnonces(data));
           console.log(data);
