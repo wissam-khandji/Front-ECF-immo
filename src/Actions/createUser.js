@@ -3,7 +3,7 @@ import { ADD_USER } from "../Store/Reducers/GlobalReducer";
 
 export function createUser(user) {
     return function(dispatch) {
-      return axios.post("https://salty-hamlet-11877.herokuapp.com/api/proprietaires.json", user)
+      return axios.post("https://sheltered-meadow-47573.herokuapp.com/api/proprietaires.json", user)
        .then(({ data }) => {
         console.log(data);
         dispatch(addUser(data));
