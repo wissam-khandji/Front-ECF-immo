@@ -3,7 +3,7 @@ import { SET_ANNONCES } from "../Store/Reducers/GlobalReducer";
 
 export function getAllAnnonce() {
     return function(dispatch) {
-      return axios.get("https://sheltered-meadow-47573.herokuapp.com/api/annonces.json")
+      return axios.get("https://shielded-falls-05334.herokuapp.com/api/annonces.json")
        .then(({ data }) => {
           dispatch(setAllAnnonces(data));
           console.log(data);
